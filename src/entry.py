@@ -1,5 +1,15 @@
-from workers import Response, handler
+from fastapi import FastAPI
 
-@handler
+
 async def on_fetch(request, env):
-    return Response("Hello World!")
+    import asgi
+
+    return await asgi.fetch(app, request, env)
+
+
+app = FastAPI()
+
+
+@app.get("/")
+async def root():
+    return {"message": "Hello, World!"}
