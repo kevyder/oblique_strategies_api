@@ -37,7 +37,7 @@ uv sync
 ### Running the API
 
 ```bash
-npm run dev
+uv run pywrangler dev
 ```
 
 The API will be available at `http://localhost:8787`
@@ -108,18 +108,6 @@ oblique_strategies_api/
 │   └── entry.py           # FastAPI application
 ├── pyproject.toml
 └── README.md
-```
-
-## Development
-
-The project uses uv for dependency management and isort for code formatting.
-
-```bash
-# Install development dependencies
-uv pip install -e ".[dev]"
-
-# Format code
-isort .
 ```
 
 ## Credits

@@ -67,3 +67,7 @@ jspm_packages/
 
 .dev.vars
 .wrangler/
+
+# python
+python_modules
+

@@ -5,10 +5,8 @@ description = "An API based on Brian Eno and Peter Schmidt's Oblique Strategies"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "webtypy==0.1.7",
+    "fastapi",
 ]
 
 [dependency-groups]
-dev = [
-    "isort>=6.0.1",
-]
+dev = ["workers-py"]
