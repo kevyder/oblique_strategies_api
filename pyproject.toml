@@ -5,8 +5,8 @@ description = "An API based on Brian Eno and Peter Schmidt's Oblique Strategies"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "fastapi",
+    "fastapi==0.116.1",
 ]
 
 [dependency-groups]
-dev = ["workers-py"]
+dev = ["workers-py==1.1.4"]

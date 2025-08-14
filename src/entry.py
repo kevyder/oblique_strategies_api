@@ -1,3 +1,5 @@
+import asgi
+
 from typing import Optional
 
 from fastapi import FastAPI, HTTPException, Query
@@ -9,8 +11,6 @@ strategy_provider = InMemoryStrategyProvider()
 
 
 async def on_fetch(request, env):
-    import asgi
-
     return await asgi.fetch(app, request, env)
 
 
